@@ -1,6 +1,6 @@
 import json
 import os
-# Para o futuro, quando for implementar a leitura de PDFs, você precisará
+# Para o futuro, quando quiser implementar a leitura de PDFs, preciso
 # de uma biblioteca como a PyMuPDF. Instale com: pip install PyMuPDF
 # import fitz # PyMuPDF
 
