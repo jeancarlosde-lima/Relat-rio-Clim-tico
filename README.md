@@ -1,3 +1,4 @@
+Relatório Climático com base no INMET 🌦️
 🎯 Sobre o Projeto
 Uma aplicação em Python para gerar relatórios climáticos dinâmicos em HTML. Utilizando uma arquitetura flexível, o script pode consumir dados de diferentes fontes (como JSON ou, futuramente, PDFs) para popular um template HTML, criando páginas web interativas e visualmente ricas com gráficos e análises detalhadas.
 
@@ -17,15 +18,20 @@ O script gera um arquivo relatorio_previsao_climatica.html completo e interativo
 
 📊 Gráficos Detalhados
 
-[Imagem da interface principal do relatório]
+Imagemdainterfaceprincipaldorelat 
+o
+ˊ
+ rio
+Imagemdosgr 
+a
+ˊ
+ ficosinterativosnorelat 
+o
+ˊ
+ rio
+Interface Principal Design limpo e informativo.
 
-[Imagem dos gráficos interativos no relatório]
-
-Interface Principal 
- Design limpo e informativo.
-
-Visualização de Dados 
- Gráficos interativos com Chart.js.
+Visualização de Dados Gráficos interativos com Chart.js.
 
 🎯 Guia Rápido de Geração
 Passo
@@ -80,6 +86,30 @@ Fonte de Dados
 
 Frontend (Gerado)
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ⚡ Quick Start
 Para colocar o projeto em funcionamento rapidamente, siga os passos abaixo:
 
@@ -122,7 +152,24 @@ FONTE_DE_DADOS = "pdf": (Futura implementação) Ativará a lógica para extrair
 🏗️ Arquitetura do Sistema
 O fluxo de dados da aplicação é direto e eficiente:
 
-[Fonte de Dados] (JSON, PDF, etc.) → [Script Python] (gerador_relatorio.py) → [Processamento e Injeção de Dados] → [Arquivo HTML Final] (relatorio_previsao_climatica.html)
+FontedeDados
+ (JSON, PDF, etc.) → 
+
+ScriptPython
+ (gerador_relatorio.py) → 
+
+ProcessamentoeInje 
+c
+\c
+​
+  
+a
+~
+ odeDados
+ → 
+
+ArquivoHTMLFinal
+ (relatorio_previsao_climatica.html)
 
 Este diagrama ilustra como o script centraliza a lógica, consumindo dados brutos e utilizando um template para produzir um relatório web interativo.
 
