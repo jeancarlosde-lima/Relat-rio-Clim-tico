@@ -1,97 +1,51 @@
-🌦️ Relatório Climático com base no INMET
-<p align="center"> <img src="https://img.shields.io/badge/Python-3.8+-blue?logo=python&logoColor=white" alt="Python Badge"> <img src="https://img.shields.io/badge/License-MIT-green.svg" alt="License Badge"> <img src="https://img.shields.io/badge/Status-Em%20Desenvolvimento-yellow" alt="Status Badge"> <img src="https://img.shields.io/badge/Contribuições-Bem%20vindas-brightgreen" alt="Contribuições Badge"> </p>
+📊 Relatório Climático com base no INMET 🚀
 
-📊 Uma aplicação em Python para gerar relatórios climáticos dinâmicos em HTML.
-O projeto utiliza uma arquitetura flexível que consome dados de diferentes fontes (JSON e, futuramente, PDFs) para popular um template HTML, criando páginas web interativas, ricas em gráficos e análises.
+<p align="center"> <img src="https://img.shields.io/badge/Python-3.8+-blue?logo=python" alt="Python Badge"> <img src="https://img.shields.io/badge/License-MIT-green" alt="License Badge"> <img src="https://img.shields.io/badge/Status-Ativo-brightgreen" alt="Status Badge"> <img src="https://img.shields.io/badge/Contribuições-Bem%20vindas-blueviolet" alt="Contribuições Badge"> </p> <p align="center"> <img src="https://img.shields.io/badge/Template-Engine-blue" alt="Template Badge"> <img src="https://img.shields.io/badge/Frontend-Chart.js-orange" alt="Chart Badge"> <img src="https://img.shields.io/badge/Estilo-TailwindCSS-teal" alt="Tailwind Badge"> <img src="https://img.shields.io/badge/Dados-JSON%20|%20PDF-lightgrey" alt="Data Badge"> </p>
+
+🎯 Sobre o Projeto
+
+Uma aplicação em Python para gerar relatórios climáticos dinâmicos em HTML.
+Com arquitetura modular, suporta múltiplas fontes de dados (JSON e, futuramente, PDFs), utiliza Chart.js para gráficos interativos e TailwindCSS para um design moderno e responsivo.
 
 ✨ Destaques
 
-🔮 Geração Dinâmica de HTML → Relatórios completos a partir de dados estruturados.
+🔮 Previsões Dinâmicas → Relatórios HTML gerados automaticamente a partir de dados estruturados.
 
-🔌 Fontes Flexíveis → Suporte a JSON e placeholders para futura extração de PDFs.
+📈 Visualização Interativa → Gráficos modernos e interativos com Chart.js.
 
-📈 Visualização Interativa → Gráficos dinâmicos usando Chart.js.
+🎨 Interface Moderna → Layout responsivo e user-friendly com TailwindCSS.
 
-🧱 Código Modular → Funções bem definidas para manutenção e expansão.
+⚡ Performance Otimizada → Processamento rápido e arquitetura expansível para novas fontes de dados.
 
-🎬 Exemplo de Relatório
+🚀 Funcionalidades
 
-📄 O script gera um arquivo relatorio_previsao_climatica.html totalmente interativo.
+📊 Gerador de Relatório → Cria automaticamente o arquivo relatorio_previsao_climatica.html.
 
-🏠 Página Principal → design limpo e informativo.
+📈 Múltiplas Fontes → Suporta HTML interno, JSON e futura integração com PDF.
 
-📊 Gráficos Detalhados → visualizações com Chart.js.
+🧱 Estrutura Modular → Código fácil de expandir e manter.
 
-(Adicione prints das telas aqui quando tiver imagens disponíveis)
+🎨 Template Engine → Substitui placeholders ({{chave}}) no HTML pelo conteúdo dos dados.
 
-🎯 Guia Rápido
+⚡ Guia Rápido
 Passo	Ação	Resultado
 1️⃣	Coloque gerador_relatorio.py, dados.json e template.html na mesma pasta	Arquivos organizados
-2️⃣	Defina a variável FONTE_DE_DADOS no gerador_relatorio.py	Escolha a fonte de dados
-3️⃣	Execute python gerador_relatorio.py no terminal	Gera relatorio_previsao_climatica.html
-🚀 Funcionalidades
-Funcionalidade	Descrição
-📊 Gerador de Relatório	Cria o arquivo final em HTML com gráficos e dados.
-📈 Múltiplas Fontes	Suporte a HTML interno, JSON e futura integração com PDF.
-📋 Estrutura Expansível	Código modular, fácil de adaptar a novas fontes.
-🎨 Template Engine Simples	Substituição de placeholders {{chave}} no HTML.
+2️⃣	Edite a variável FONTE_DE_DADOS no script	Define a fonte (html, json, pdf)
+3️⃣	Execute python gerador_relatorio.py	Gera o relatório final em HTML
+
+📌 O relatório final será salvo como relatorio_previsao_climatica.html.
+
 🛠️ Stack Tecnológica
-🔙 Backend
 
 🐍 Python 3.8+
 
-📂 Fonte de Dados
-
-📑 JSON
-
-📄 PDF (em breve)
-
-🎨 Frontend (Gerado)
+📂 JSON / PDF (futuro)
 
 🌐 HTML5
 
-🎨 Tailwind CSS
+🎨 TailwindCSS
 
 📊 Chart.js
-
-⚡ Quick Start
-📋 Pré-requisitos
-
-Python 3.8+ instalado
-
-🚀 Instalação
-
-Obtenha os arquivos
-
-git clone <repo-url>
-cd projeto
-
-
-Certifique-se de ter gerador_relatorio.py, dados.json e template.html no mesmo diretório.
-
-(Opcional) Crie um ambiente virtual
-
-python3 -m venv .venv
-source .venv/bin/activate   # Linux/macOS
-.venv\Scripts\activate      # Windows
-
-
-Execute o gerador
-
-python gerador_relatorio.py
-
-
-📌 O arquivo relatorio_previsao_climatica.html será criado automaticamente.
-
-📱 Como Usar
-
-Edite a variável FONTE_DE_DADOS em gerador_relatorio.py:
-
-"html_original" → copia o HTML interno.
-
-"json" → lê os dados do arquivo dados.json e insere no template.
-
-"pdf" → (em breve) extrai dados de um PDF.
 
 🏗️ Arquitetura do Sistema
 flowchart LR
@@ -101,17 +55,33 @@ flowchart LR
 
 📈 Metodologia de Template
 
-O template.html contém placeholders como {{titulo_principal}}.
+O arquivo template.html contém placeholders como {{titulo_principal}}.
+O script lê os dados da fonte escolhida (JSON, HTML hardcoded ou PDF futuro) e substitui cada chave pelo valor correspondente.
 
-O script substitui automaticamente esses marcadores pelos valores encontrados em dados.json.
+✅ Essa abordagem separa conteúdo e design, facilitando manutenção e expansão.
 
-Isso desacopla conteúdo e design, permitindo atualizações independentes.
+⚡ Quick Start
+📋 Pré-requisitos
+
+Python 3.8+ instalado no sistema
+
+🔧 Instalação
+git clone <repo-url>
+cd projeto
+
+(Opcional) Criar ambiente virtual
+python3 -m venv .venv
+source .venv/bin/activate   # Linux/macOS
+.venv\Scripts\activate      # Windows
+
+▶️ Execução
+python gerador_relatorio.py
 
 🤝 Contribuindo
 
-Faça um Fork do projeto.
+Faça um Fork do projeto
 
-Crie sua branch:
+Crie uma branch de feature:
 
 git checkout -b feature/NovaFuncionalidade
 
@@ -121,12 +91,12 @@ Commit suas alterações:
 git commit -m "Adiciona NovaFuncionalidade"
 
 
-Push da branch:
+Push para o repositório:
 
 git push origin feature/NovaFuncionalidade
 
 
-Abra um Pull Request.
+Abra um Pull Request
 
 📄 Licença
 
